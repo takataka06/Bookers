@@ -1,0 +1,11 @@
+<h1 class="title">About</h1>
+<p class="big-title">Title</p>
+<p class="content"><%= @book.title %></p>
+<p class="big-title">Body</p>
+<p class="content"><%= @book.body %></p>
+
+
+<div class="book-actions">
+<%= link_to "edit", edit_book_path(@book.id) %>
+<%= link_to "back", books_path %>
+</div>
